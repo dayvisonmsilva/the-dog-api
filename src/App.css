@@ -1,0 +1,81 @@
+/* General resets */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+/* App container */
+.app {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Breed selector */
+.breed-selector {
+  margin-bottom: 1.5rem;
+}
+
+.breed-selector label {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.breed-selector select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Images grid */
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.dog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dog-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Refresh button */
+.refresh-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.refresh-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.refresh-button:active {
+  background-color: #1e7e34;
+  transform: translateY(0);
+}
